@@ -18,7 +18,7 @@ This is software that performs simple mathematical operations. Made with Java an
 
 ## Demonstration
 
-![Calculator](https://github.com/Evelyn-Cass/simon/blob/main/img/calculator.gif)
+![Calculator](https://github.com/Evelyn-Cass/calculator/blob/main/img/calculator.gif)
 
 ## Credit
 - Developer: Evelyn Cassinotte
