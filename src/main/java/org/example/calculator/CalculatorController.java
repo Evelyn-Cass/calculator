@@ -213,7 +213,14 @@ public class CalculatorController {
     }
     @FXML
     protected void onClickBtnPercentage(){
-
+        if (calculator.getStoredValue() != "") {
+            calculator.getPercentage();
+            playSound("sound/press-key.mp3");
+            lblValueInput.setText(calculator.getValue());
+        }
+        else {
+            playSound("sound/error.mp3");
+        }
     }
 
     protected void playSound(String path){

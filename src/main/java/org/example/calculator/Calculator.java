@@ -29,7 +29,7 @@ public class Calculator {
     }
 
 
-    public boolean addNumberToValue(String x){
+    public boolean addNumberToValue(String x) {
         if (value.length() < 10) {
             this.value += x;
             return true;
@@ -37,13 +37,13 @@ public class Calculator {
         return false;
     }
 
-    public  void  resetOperation(){
+    public void resetOperation() {
         this.value = "";
         this.operator = 'E'; //Empty
         this.storedValue = "";
     }
 
-    public void sendValueToStorage(){
+    public void sendValueToStorage() {
         this.storedValue = this.value;
         this.value = "";
     }
@@ -51,10 +51,11 @@ public class Calculator {
     public char getOperator() {
         return operator;
     }
-    public double calculateOperation(){
+
+    public double calculateOperation() {
         double value = Double.parseDouble(this.value);
         double storedValue = Double.parseDouble(this.storedValue);
-        switch (this.operator){
+        switch (this.operator) {
             case '-':
                 return storedValue - value;
             case '+':
@@ -66,5 +67,12 @@ public class Calculator {
             default:
                 return 0;
         }
+    }
+
+    public void getPercentage(){
+        double value = Double.parseDouble(this.value);
+        double storedValue = Double.parseDouble(this.storedValue);
+        double result = storedValue * (value/100);
+        this.value = result + "";
     }
 }
