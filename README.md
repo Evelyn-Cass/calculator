@@ -3,11 +3,11 @@ Software that performs simple mathematical operations. Made with Java and JavaFX
 
 ## Operations
 
-- Add
-- Subtract
-- Multiply
-- Divide
-- Percentage
+- **Addition:** Perform addition of two numbers.
+- **Subtraction:** Subtract one number from another.
+- **Multiplication:** Multiply two numbers together.
+- **Division:** Divide one number by another.
+- **Percentage:** Calculate the percentage of a given number.
 
 
 ## How to Use
