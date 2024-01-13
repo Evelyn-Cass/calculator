@@ -14,7 +14,8 @@ Software that performs simple mathematical operations. Made with Java and JavaFX
 
 - Clone this repository;
 - Start the Calculator.exe or compile and run the application from your favorite Java development environment;
-- Have fun!
+- Enter two numbers and select the desired operation.
+- View the result.
 
 ## Demonstration
 
