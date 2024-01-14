@@ -1,5 +1,5 @@
 # Calculator
-Software that performs simple mathematical operations. Made with Java and JavaFX.
+Software that performs simple mathematical operations.
 
 ## Operations
 
