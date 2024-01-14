@@ -9,6 +9,9 @@ Software that performs simple mathematical operations.
 - **Division:** Divide one number by another.
 - **Percentage:** Calculate the percentage of a given number.
 
+## Demonstration
+
+![Calculator](https://github.com/Evelyn-Cass/calculator/blob/main/img/calculator.gif)
 
 ## How to Use
 
@@ -16,10 +19,6 @@ Software that performs simple mathematical operations.
 - Start the Calculator.exe or compile and run the application from your favorite Java development environment;
 - Enter two numbers and select the desired operation.
 - View the result.
-
-## Demonstration
-
-![Calculator](https://github.com/Evelyn-Cass/calculator/blob/main/img/calculator.gif)
 
 ## Credit
 - Developer: Evelyn Cassinotte
