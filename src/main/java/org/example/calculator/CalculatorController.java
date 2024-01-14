@@ -16,104 +16,43 @@ public class CalculatorController {
     Calculator calculator = new Calculator();
     @FXML
     protected void onClickBtnZero(){
-        if (calculator.addNumberToValue("0")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("0");
     }
     @FXML
     protected void onClickBtn01(){
-        if (calculator.addNumberToValue("1")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("1");
     }
     @FXML
     protected void onClickBtn02(){
-        if (calculator.addNumberToValue("2")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("2");
     }
     @FXML
     protected void onClickBtn03(){
-        if (calculator.addNumberToValue("3")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("3");
     }
     @FXML
     protected void onClickBtn04(){
-        if (calculator.addNumberToValue("4")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("4");
     }
     @FXML
     protected void onClickBtn05(){
-        if (calculator.addNumberToValue("5")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("5");
     }
     @FXML
     protected void onClickBtn06(){
-        if (calculator.addNumberToValue("6")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
-
+        addNewNumber("6");
     }
     @FXML
     protected void onClickBtn07(){
-        if (calculator.addNumberToValue("7")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("7");
     }
     @FXML
     protected void onClickBtn08(){
-        if (calculator.addNumberToValue("8")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("8");
     }
     @FXML
     protected void onClickBtn09(){
-        if (calculator.addNumberToValue("9")) {
-            lblValueInput.setText(calculator.getValue());
-            playSound("sound/press-key.mp3");
-        }
-        else{
-            playSound("sound/error.mp3");
-        }
+        addNewNumber("9");
     }
     @FXML
     protected void onClickBtnDot() {
@@ -227,6 +166,16 @@ public class CalculatorController {
         Media sound = new Media(new File(path).toURI().toString());
         MediaPlayer mediaPlayer = new MediaPlayer(sound);
         mediaPlayer.play();
+    }
+
+    protected void addNewNumber(String number){
+        if (calculator.addNumberToValue(number)) {
+            lblValueInput.setText(calculator.getValue());
+            playSound("sound/press-key.mp3");
+        }
+        else{
+            playSound("sound/error.mp3");
+        }
     }
 
 }
